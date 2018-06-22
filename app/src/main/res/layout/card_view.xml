@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="m.com.bizcards.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/background_2"
+    >
+
+    <!--  -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_2"
+        android:focusableInTouchMode="true">
+
+        <!--  -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TitlefirstName"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:text="First Name"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/firstName"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionDone|flagNoFullscreen"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Titlelastname"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:text="Last Name"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/lastName"
+                    android:layout_width="213dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:imeOptions="actionDone|flagNoFullscreen"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Titleemail"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:text="E mail"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="212dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="23dp"
+                        android:imeOptions="actionDone|flagNoFullscreen"
+                        android:width="150dp"
+                        android:ems="10"
+                        android:focusableInTouchMode="true"
+                        android:hint=""
+                        android:inputType="textEmailAddress"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/emailbtn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:width="30dp"
+                        android:background="@android:drawable/sym_action_email"
+                        android:backgroundTint="@android:color/background_light" />
+
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/Titlemobile"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:text="Mobile"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="212dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="23dp"
+                        android:width="150dp"
+                        android:ems="10"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:imeOptions="actionDone|flagNoFullscreen"
+                        android:hint=""
+                        android:inputType="phone"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/smsmobile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:width="30dp"
+                        android:background="@android:drawable/sym_action_chat"
+                        android:backgroundTint="@android:color/background_light" />
+
+                    <Button
+                        android:id="@+id/callmobile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:width="30dp"
+                        android:background="@android:drawable/stat_sys_phone_call"
+                        android:backgroundTint="@android:color/background_light" />
+
+
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/Titlelandline"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:text="Landline"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <EditText
+                        android:id="@+id/landline"
+                        android:layout_width="212dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="23dp"
+                        android:width="150dp"
+                        android:ems="10"
+                        android:imeOptions="actionDone|flagNoFullscreen"
+                        android:focusableInTouchMode="true"
+                        android:hint=""
+                        android:inputType="phone"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/landlinecall"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:width="30dp"
+                        android:background="@android:drawable/stat_sys_phone_call" />
+
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/Titlecompany"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:text="Company"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/company"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:imeOptions="actionDone|flagNoFullscreen"
+                    android:focusableInTouchMode="true"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Titlefjobtitle"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:text="Job Title"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/job"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone|flagNoFullscreen"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/Titlecity"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:text="City"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionDone|flagNoFullscreen"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/Titlewebsite"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:text="Website"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/website"
+                        android:layout_width="212dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="23dp"
+                        android:width="150dp"
+                        android:ems="10"
+                        android:focusableInTouchMode="true"
+                        android:imeOptions="actionDone|flagNoFullscreen"
+                        android:hint=""
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/urlclick"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:width="30dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/web"
+                        android:backgroundTint="@android:color/background_light" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/notetitle"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:text="Note"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/Note"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:width="150dp"
+                    android:ems="10"
+                    android:imeOptions="actionDone|flagNoFullscreen"
+                    android:focusableInTouchMode="true"
+                    android:hint=""
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:orientation="horizontal">
+
+                    <!--<Button
+                        android:id="@+id/updatebtnid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="20dp"
+                        android:width="130dp"
+                        android:background="@drawable/rounded"
+                        android:text="Update Contact" /> -->
+
+                    <Button
+                        android:id="@+id/deletebtnid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="10dp"
+                        android:width="130dp"
+
+                        android:background="@drawable/rounded"
+                        android:text="Delete Contact" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

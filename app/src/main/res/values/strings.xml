@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BizCards</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="firstnameerror">Enter Valid First Name</string>
+    <string name="lastnameerror">Enter Valid Last Name</string>
+    <string name="mobileerror">Enter Valid Mobile Number</string>
+    <string name="telmobileerror">Enter Valid Landline Number</string>
+    <string name="emailerror">Enter Valid Email</string>
+    <string name="companyerror">Enter Valid Company Name</string>
+    <string name="joberror">Enter Valid Job title</string>
+    <string name="cityerror">Enter Valid City</string>
+    <string name="industryerror">Enter Valid Industry</string>
+    <string name="weberror">Enter Valid Website URL</string>
+    <string name="pinerror">Enter Valid Pin Code</string>
+    <string name="noteerror">Enter Note</string>
+</resources>
